@@ -31,12 +31,20 @@ import App23 from './Apps/App23.vue'
 import App25 from './Apps/App25.vue'
 import App26 from './Apps/App26.vue'
 import App27 from './Apps/App27.vue'
+// import * as Vue from 'vue' // <--- 放棄使用 axios ...
+// import axios from 'axios'
+// import VueAxios from 'vue-axios'
 import App28 from './Apps/App28.vue'
+import App29 from './Apps/App29.vue'
+import App30 from './Apps/App30.vue'
+import App31 from './Apps/App31.vue'
+import App32 from './Apps/App32.vue'
+import App33 from './Apps/App33.vue'
 
 
 //createApp(App).mount('#app')//這是第一層(預設)
 
-//以下的實作，都是按官網的教學︰
+//以下的實作，都是按官網的教學(2022/08的版本)︰
 //https://vuejs.org/tutorial/
 
 //createApp(App1).mount('#app')//在同層傳值 (data的設定)
@@ -44,20 +52,20 @@ import App28 from './Apps/App28.vue'
 //createApp(App3).mount('#app')//Event Listeners(method的設定) v-on
 
 //---- 下方的都只是基本範例，還有它們還有進階 ----
-//createApp(App4).mount('#app')//Form Bindings | v-model 的使用
-//createApp(App5).mount('#app')//Conditional Rendering | v-if 
-//createApp(App6).mount('#app')//List Rendering | v-for
-//createApp(App7).mount('#app')//Computed Property | before 和 迴圈
-//createApp(App7F).mount('#app')//Computed Property | after
-//createApp(App8).mount('#app')//Lifecycle and Template Refs | mount 
-//createApp(App9).mount('#app')//Watchers | await 和 fetch ! 
-//createApp(App10).mount('#app')//Component召喚 
-//createApp(App11).mount('#app')//召喚者的傳值 | props
-//createApp(App12).mount('#app')//反面給值(召喚獸給召喚者？) | emit 
-//createApp(App13).mount('#app')//兒子以slot接值 | <slot>
+//createApp(App4).mount('#app')// Form Bindings | v-model 的使用
+//createApp(App5).mount('#app')// Conditional Rendering | v-if 
+//createApp(App6).mount('#app')// List Rendering | v-for
+//createApp(App7).mount('#app')// Computed Property | before 和 迴圈
+//createApp(App7F).mount('#app')// Computed Property | after
+//createApp(App8).mount('#app')// Lifecycle and Template Refs | mount 
+//createApp(App9).mount('#app')// Watchers | await 和 fetch ! 
+//createApp(App10).mount('#app')// Component召喚 
+//createApp(App11).mount('#app')// 召喚者的傳值 | props
+//createApp(App12).mount('#app')// 反面給值(召喚獸給召喚者？) | emit 
+//createApp(App13).mount('#app')// 兒子以slot接值 | <slot>
+//createApp(App14).mount('#app')// 綜合練習 v-for, key value 和 index 
 
-//---- 進階練習 ----
-//createApp(App14).mount('#app')// v-for, key value 和 index
+//#region ---- 記，一些有的沒的理論上？ ----
 
 // #region 另一個Mount
 // const app8F = createApp({
@@ -91,6 +99,8 @@ import App28 from './Apps/App28.vue'
 
 // #endregion
 
+// #endregion ----
+
 // 官方的 Examples : 
 
 //createApp(App15).mount('#app')// e.preventDefault() , Reverse Message, inline expression statement
@@ -101,8 +111,33 @@ import App28 from './Apps/App28.vue'
 //createApp(App21).mount('#app')// import + npm 外掛！ , @input 的指令…
 //createApp(App22).mount('#app')// fetch Data ! 生命週期 created() , watch .. 
 //createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
-createApp(App25).mount('#app') // watch 和 computed 差別的補充 筆記見 watch_computed.js 的內容。
-//createApp(App26).mount('#app')
-//createApp(App27).mount('#app')
-//createApp(App28).mount('#app')
 
+//<23>的實作 引發補充 1︰
+//createApp(App25).mount('#app') // computed 的生命週期和觸發條件補充 筆記見 watch_computed.js 的內容。
+//createApp(App26).mount('#app')// computed 和 method 的相似 筆記見 watch_computed.js 的內容。
+//createApp(App27).mount('#app')// watch 和 computed 不同, computed 無法進行非同步工作
+//#region --- 放棄太難用的 axios
+
+// const app = createApp(App27)  
+// app.use(VueAxios, axios) 
+// app.mount('#app')
+
+//or
+
+//createApp(App27).use(VueAxios, axios).mount('#app')
+
+//#endregion ---
+//createApp(App28).mount('#app')// watch 若加上  deep: true 和  immediate: true ，也可以在掛上和該值變化的時候，自動跑一次。
+
+//<23>的實作 引發補充 2︰
+//https://ithelp.ithome.com.tw/articles/10207154
+//https://learnku.com/vuejs/t/53162
+//createApp(App29).mount('#app') // array.forEach(function (item, index, array){ ... })
+//createApp(App30).mount('#app') // array.map(function(currentValue, index, arr), thisValue)
+                                 // arr.filter(callback(element[, index[, array]])[, thisArg])
+createApp(App31).mount('#app')  // arr.reduce(function(preValue, value, index, array)
+
+//createApp(App32).mount('#app') // Object.keys(obj) 是 for-in 迴圈 ? 
+                                 // .some() 方法會透過「給函式」、測試陣列中是否至少有一個元素
+//createApp(App33).mount('#app') 
+//createApp(App34).mount('#app') 

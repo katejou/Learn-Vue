@@ -71,12 +71,34 @@
 //#endregion --------- --------- 
 
 // method 就是 method ，和其化程式語言一樣，沒有什麼好說的。傳入﹑回傳﹑被呼叫，沒有特別。
-// method 和 computed 在某些情況下，同樣會在「沒有呼叫」的時候被觸發。
+// method 和 computed 在某些情況下，同樣會在「沒有呼叫」的時候被觸發。見App26
 
 //#region --------- watch ---------
 
+// watch 的特點
+// 1. watch 會偵測某個值，當該值有變化時，就會執行。(和 computed 一樣？)
+// 2. watch 可傳入參數，第一個參數是更新後的值，第二是舊值。(computed 就沒有辨法拿舊值了。)
+// 比起 computed，可以處理非同步工作。(computed是一次監多個，watch是專門為fetch的？做非同步。)
 
+//computed 無法進行非同步工作，
+//以 AJAX 取資料為例，下面例子是分別以 computed 和 watch 打 API 取得一筆 User 資料。
+// App27
 
+//結果 computed 會回傳 [object Promise]。
+//至於 watch，預設是綁定一個空物件，當我按按鈕去取資料時，最後就會顯示 User 的資料
+
+//watch 若加上  deep: true 和  immediate: true ，也可以在掛上和該值變化的時候，自動跑一次。
+// App28
+
+//那應該什麼時候用 computed、watch 和 methods？
+//你會發現，有些情況即使使用 computed、watch 和 methods 都能實現同一效果。
+//但是，computed 的效能通常都會比較好，因為：
+
+//1.減少程式碼。
+//2.當處理資料量多的資料時，因為緩存資料的機制，效能會比較好。
+
+//watch就只留給 fetch 就好！
+//method就每次呼叫都做，沒有暫存的效果！
 
 //#endregion --------- --------- 
 
