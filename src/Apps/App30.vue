@@ -52,8 +52,8 @@ export default {
                 if(item.power > 8000) return item;
             });
             console.log(newArray);
-            // map 會有 undefined , filter 會自動 可以排除 '' 和 undefined (=false的東東)
-            // 我覺得如果是用來接收 fetch 資料的話，會有用，所以我實作一下。
+            // map 不到會預設回傳 undefined , filter 會自動 可以排除 '' 和 undefined (=false的東東)
+            // 我覺得如果是用來接收 fetch 資料的話，會有用，所以我實作一下作排除用的filter。
             newArray = newArray.filter(function (item, index, array) {
                 return item;
             });

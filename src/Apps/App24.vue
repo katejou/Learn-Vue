@@ -13,6 +13,7 @@ export default {
       sortKey: '',
       //找出 array.reduce 這個方法幹的是什麼？ 我在App29去研究…
       sortOrders: this.columns.reduce((o, key) => ((o[key] = 1), o), {})// 這句看不懂。
+      // = [1,1] ? 
       // this.columns.reduce((item, index) => ((item[index] = 1), item), {}) // <-- 是這個意思？
     }
   },

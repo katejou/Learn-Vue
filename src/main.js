@@ -40,7 +40,7 @@ import App30 from './Apps/App30.vue'
 import App31 from './Apps/App31.vue'
 import App32 from './Apps/App32.vue'
 import App33 from './Apps/App33.vue'
-
+import App34 from './Apps/App34.vue'
 
 //createApp(App).mount('#app')//這是第一層(預設)
 
@@ -110,12 +110,12 @@ import App33 from './Apps/App33.vue'
 //createApp(App19).mount('#app')// (19) 引用隔壁 (20) 的 Component，19 以 v-for 迴圈傳值並生成 20，
 //createApp(App21).mount('#app')// import + npm 外掛！ , @input 的指令…
 //createApp(App22).mount('#app')// fetch Data ! 生命週期 created() , watch .. 
-//createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
+createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
 
 //<23>的實作 引發補充 1︰
-//createApp(App25).mount('#app') // computed 的生命週期和觸發條件補充 筆記見 watch_computed.js 的內容。
-//createApp(App26).mount('#app')// computed 和 method 的相似 筆記見 watch_computed.js 的內容。
-//createApp(App27).mount('#app')// watch 和 computed 不同, computed 無法進行非同步工作
+//createApp(App25).mount('#app')  // computed 的生命週期和觸發條件補充 筆記見 watch_computed.js 的內容。
+//createApp(App26).mount('#app')  // computed 和 method 的相似 筆記見 watch_computed.js 的內容。
+//createApp(App27).mount('#app')  // watch 和 computed 不同, computed 無法進行非同步工作
 //#region --- 放棄太難用的 axios
 
 // const app = createApp(App27)  
@@ -127,7 +127,7 @@ import App33 from './Apps/App33.vue'
 //createApp(App27).use(VueAxios, axios).mount('#app')
 
 //#endregion ---
-//createApp(App28).mount('#app')// watch 若加上  deep: true 和  immediate: true ，也可以在掛上和該值變化的時候，自動跑一次。
+//createApp(App28).mount('#app')  // watch 若加上  deep: true 和  immediate: true ，也可以在掛上和該值變化的時候，自動跑一次。
 
 //<23>的實作 引發補充 2︰
 //https://ithelp.ithome.com.tw/articles/10207154
@@ -135,9 +135,10 @@ import App33 from './Apps/App33.vue'
 //createApp(App29).mount('#app') // array.forEach(function (item, index, array){ ... })
 //createApp(App30).mount('#app') // array.map(function(currentValue, index, arr), thisValue)
                                  // arr.filter(callback(element[, index[, array]])[, thisArg])
-createApp(App31).mount('#app')  // arr.reduce(function(preValue, value, index, array)
-
-//createApp(App32).mount('#app') // Object.keys(obj) 是 for-in 迴圈 ? 
+//createApp(App31).mount('#app') // arr.reduce(callback[accumulator, currentValue, currentIndex, array], initialValue)
+//createApp(App32).mount('#app') // Object.keys(obj) 是  
                                  // .some() 方法會透過「給函式」、測試陣列中是否至少有一個元素
-//createApp(App33).mount('#app') 
+                                 // arrow function
+//createApp(App33).mount('#app') // 綜合練習︰https://gist.github.com/DanDiplo/30528387da41332ff22b
+
 //createApp(App34).mount('#app') 
