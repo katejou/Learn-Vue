@@ -41,8 +41,19 @@ import App31 from './Apps/App31.vue'
 import App32 from './Apps/App32.vue'
 import App33 from './Apps/App33.vue'
 import App34 from './Apps/App34.vue'
+import App35 from './Apps/App35.vue'
+import App36 from './Apps/App36.vue'
+import App37 from './Apps/App37.vue'
+import App38 from './Apps/App38.vue'
+import App39 from './Apps/App39.vue'
+import App40 from './Apps/App40.vue'
+import App41 from './Apps/App41.vue'
+import App42 from './Apps/App42.vue'
+import App43 from './Apps/App43.vue'
+import App44 from './Apps/App44.vue'
 
-//createApp(App).mount('#app')//這是第一層(預設)
+
+//createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 
 //以下的實作，都是按官網的教學(2022/08的版本)︰
 //https://vuejs.org/tutorial/
@@ -110,7 +121,7 @@ import App34 from './Apps/App34.vue'
 //createApp(App19).mount('#app')// (19) 引用隔壁 (20) 的 Component，19 以 v-for 迴圈傳值並生成 20，
 //createApp(App21).mount('#app')// import + npm 外掛！ , @input 的指令…
 //createApp(App22).mount('#app')// fetch Data ! 生命週期 created() , watch .. 
-createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
+//createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
 
 //<23>的實作 引發補充 1︰
 //createApp(App25).mount('#app')  // computed 的生命週期和觸發條件補充 筆記見 watch_computed.js 的內容。
@@ -141,4 +152,15 @@ createApp(App23).mount('#app')// Grid的操作，即時篩選，排序。
                                  // arrow function
 //createApp(App33).mount('#app') // 綜合練習︰https://gist.github.com/DanDiplo/30528387da41332ff22b
 
-//createApp(App34).mount('#app') 
+//createApp(App34).mount('#app') // App23->24看不懂的東東，在這裡驗証
+
+createApp(App35).mount('#app') // TreeItem.vue !!! recursively render !!!!
+//createApp(App36).mount('#app')
+//createApp(App37).mount('#app')
+//createApp(App38).mount('#app')
+//createApp(App39).mount('#app')
+//createApp(App40).mount('#app')
+//createApp(App41).mount('#app')
+//createApp(App42).mount('#app')
+//createApp(App43).mount('#app')
+//createApp(App44).mount('#app')
