@@ -150,14 +150,15 @@ import App44 from './Apps/App44.vue'
 //createApp(App32).mount('#app') // Object.keys(obj) 是  
                                  // .some() 方法會透過「給函式」、測試陣列中是否至少有一個元素
                                  // arrow function
-//createApp(App33).mount('#app') // 綜合練習︰https://gist.github.com/DanDiplo/30528387da41332ff22b
 
+//createApp(App33).mount('#app') // 綜合練習︰https://gist.github.com/DanDiplo/30528387da41332ff22b
 //createApp(App34).mount('#app') // App23->24看不懂的東東，在這裡驗証
 
-createApp(App35).mount('#app') // TreeItem.vue !!! recursively render !!!!
-//createApp(App36).mount('#app')
-//createApp(App37).mount('#app')
-//createApp(App38).mount('#app')
+//createApp(App35).mount('#app') // TreeItem.vue !!! recursively render !!!!
+//createApp(App36).mount('#app') // input type="range" , PolyGraph。(未解的地方很多，但我趕時間學angular)
+                                  // 加上 graph 什麼的，好像不常用，所以算了…
+//createApp(App37).mount('#app') // Modal with Transition 黑幕鎖屏 及 跳出視窗
+createApp(App38).mount('#app')
 //createApp(App39).mount('#app')
 //createApp(App40).mount('#app')
 //createApp(App41).mount('#app')

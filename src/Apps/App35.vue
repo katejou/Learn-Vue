@@ -8,22 +8,23 @@ A nested tree component that recursively renders itself.
 // import 和 自設的資料，是往「裡」走的
 import TreeItem from './TreeItem.vue'
 const treeData = {
-    name: 'My Tree',
+    name: 'My Tree', //每一個name節點，也只能有一個children兒子。
+    // 而第一個一定要有一個兒子，不然就別Recursive了…
     children: [
-        { name: 'hello' },
-        { name: 'wat' },
-        {
-            name: 'child folder',
-            children: [
-                {
-                    name: 'child folder',
-                    children: [{ name: 'hello' }, { name: 'wat' }]
+        { name: '---1---' },
+        { name: '---2---' },
+        { name: '---3---',
+        //由這裡，才進入Recursive。children都是 []
+          children: [
+                {   name: '--3.1--',
+                    children: [ { name: '-3.1.1-' }, 
+                                { name: '-3.1.2-' }]
                 },
-                { name: 'hello' },
-                { name: 'wat' },
-                {
-                    name: 'child folder',
-                    children: [{ name: 'hello' }, { name: 'wat' }]
+                {   name: '--3.2--' },
+                {   name: '--3.3--' },
+                {   name: '--3.4--',
+                    children: [ { name: '-3.4.1-' }, 
+                                { name: '-3.4.2-' }]
                 }
             ]
         }
