@@ -171,6 +171,18 @@ import App45 from './Apps/App45.vue'
                                  // performance.now()
                                  // this.handle = requestAnimationFrame(update) 
                                  // cancelAnimationFrame(this.handle)
-createApp(App43).mount('#app')  //  前端CRUD
-//createApp(App44).mount('#app')
-//createApp(App44).mount('#app')
+//createApp(App43).mount('#app') //  前端CRUD, 
+                                 // ;[array] = array ，就可以單行給值多個變數
+                                 // watch 用於 select 的 option 上!!!!
+                                 // 化成字串的奇怪方法！`${this.X}, ${this.Y}`
+
+// 這兩個太進階了，我想我以後未必會有得到，所以我不看了︰
+
+//createApp(App44).mount('#app') // 不太明白「畫圓圈」是能夠幹什麼…
+//createApp(App45).mount('#app') // 這個是 線上 Excel … 
+
+// 練習到這裡。
+// 感想是︰ css 檔案的引入(App39)好難在cache「洗掉」
+// 唯有改一改 index.html之中的內容，讓 head 不再一直自動去引用外來(網)的 css 檔 ?
+// 這樣也不行…效果還是在… 
+// 算了，記得以後不要像 App39 那樣引用任何 css 檔好了…

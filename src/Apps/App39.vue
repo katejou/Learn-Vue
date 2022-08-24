@@ -175,5 +175,6 @@ export default {
 </template>
 
 <style>
-@import "https://unpkg.com/todomvc-app-css@2.4.1/index.css";
+/* @import "https://unpkg.com/todomvc-app-css@2.4.1/index.css"; */
+/* 這個 import 超難洗去的，引致之後的練習都不停地被影響！ */
 </style>
