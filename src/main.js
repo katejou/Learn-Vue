@@ -51,7 +51,7 @@ import App41 from './Apps/App41.vue'
 import App42 from './Apps/App42.vue'
 import App43 from './Apps/App43.vue'
 import App44 from './Apps/App44.vue'
-
+import App45 from './Apps/App45.vue'
 
 //createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 
@@ -156,12 +156,21 @@ import App44 from './Apps/App44.vue'
 
 //createApp(App35).mount('#app') // TreeItem.vue !!! recursively render !!!!
 //createApp(App36).mount('#app') // input type="range" , PolyGraph。(未解的地方很多，但我趕時間學angular)
-                                  // 加上 graph 什麼的，好像不常用，所以算了…
+                                 // 加上 graph 什麼的，好像不常用，所以算了…
 //createApp(App37).mount('#app') // Modal with Transition 黑幕鎖屏 及 跳出視窗
-createApp(App38).mount('#app')
-//createApp(App39).mount('#app')
-//createApp(App40).mount('#app')
-//createApp(App41).mount('#app')
-//createApp(App42).mount('#app')
-//createApp(App43).mount('#app')
+//createApp(App38).mount('#app') // Transition 除了可以用在 黑幕鎖屏 之外，還可以做小動畫。
+                                 // TransitionGroup 
+//createApp(App39).mount('#app') // 另一個 Todolist ， 介紹了一個MVC 的模版網站…我不細看了(因為我暫時用不到)
+                                 // 加上 Todolist 已經練習過，而且它的 css 好複雜，又難改，又不好看…(可能是我能力不足？)
+//createApp(App40).mount('#app') // 華氏和攝氏的簡單例子！ 學到 +e.target.value 的意思
+//createApp(App41).mount('#app') // 學習DDL和日曆，Disenable ﹑ Alert ﹑還有驗証！ 
+                                 //常用方法︰dateToString 的方法 + 如非兩位數，在前方補零
+//createApp(App42).mount('#app') // timer, 可以用來做個假的進度條？ 
+                                 // 比較像和生命週期的關係…
+                                 // this.handle 是 while alive 的感覺。
+                                 // performance.now()
+                                 // this.handle = requestAnimationFrame(update) 
+                                 // cancelAnimationFrame(this.handle)
+createApp(App43).mount('#app')  //  前端CRUD
+//createApp(App44).mount('#app')
 //createApp(App44).mount('#app')

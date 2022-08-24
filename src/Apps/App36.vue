@@ -65,13 +65,15 @@ export default {
         <input type="range" v-model="stat.value" min="0" max="100">
 
         <span>{{ stat.value }}</span>
-        <button @click="remove(stat)" class="remove">X</button>
+        <input type='button' @click="remove(stat)" class="remove" value='X'/>
     </div>
 
     <!-- 新的 -->
     <form id="add">
         <input name="newlabel" v-model="newLabel">
-        <button @click="add">Add a Stat</button>
+        <input type='button' @click="add" value='Add a Stat'/>
+        <!-- 原本是 button 而不是 input type='button'，但是會被強制分行，怎調CSS都沒有用。
+        所以改成 input type='button'，馬上順眼了。我也不知道為什麼官網那邊就沒有這個問題… -->
     </form>
 
     <!-- 顯示原本的串列內容 -->
