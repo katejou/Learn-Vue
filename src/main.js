@@ -53,7 +53,7 @@ import App43 from './Apps/App43.vue'
 import App44 from './Apps/App44.vue'
 import App45 from './Apps/App45.vue'
 
-//createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
+createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 
 //以下的實作，都是按官網的教學(2022/08的版本)︰
 //https://vuejs.org/tutorial/
