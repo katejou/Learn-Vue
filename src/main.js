@@ -53,7 +53,7 @@ import App43 from './Apps/App43.vue'
 import App44 from './Apps/App44.vue'
 import App45 from './Apps/App45.vue'
 
-createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
+//createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 
 //以下的實作，都是按官網的教學(2022/08的版本)︰
 //https://vuejs.org/tutorial/
@@ -69,7 +69,7 @@ createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 //createApp(App7).mount('#app')// Computed Property | before 和 迴圈
 //createApp(App7F).mount('#app')// Computed Property | after
 //createApp(App8).mount('#app')// Lifecycle and Template Refs | mount 
-//createApp(App9).mount('#app')// Watchers | await 和 fetch ! 
+createApp(App9).mount('#app')// Watchers | await 和 fetch ! 
 //createApp(App10).mount('#app')// Component召喚 
 //createApp(App11).mount('#app')// 召喚者的傳值 | props
 //createApp(App12).mount('#app')// 反面給值(召喚獸給召喚者？) | emit 
@@ -138,6 +138,7 @@ createApp(App).mount('#app')//這是第一層(檔案生成的預設例子)
 //createApp(App27).use(VueAxios, axios).mount('#app')
 
 //#endregion ---
+
 //createApp(App28).mount('#app')  // watch 若加上  deep: true 和  immediate: true ，也可以在掛上和該值變化的時候，自動跑一次。
 
 //<23>的實作 引發補充 2︰

@@ -56,7 +56,7 @@ export default {
 
 
 <template>
-
+<br/><br/><br/><br/><br/>
     <div id="app">
         <label for="name">輸入名稱：</label>
         <input type="text" v-model="user.name" id="name">
