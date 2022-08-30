@@ -10,9 +10,9 @@
 
             <button :disabled='Loading'
                     @click="download_all_checked" >
-                    {{ Loading ? 'Loading..' : 'Click Me' }}
+                    {{ Loading ? 'Loading...' : 'Click Me' }}
             </button>
-        
+            <br/><br/>
             <div v-for="(item, index) in files" :key="index">
                 <input type="checkbox" :id="item.name" v-model="item.checked">
                 <label :for="item.name" >{{item.name}}</label>
@@ -40,14 +40,15 @@
                 methods: {
 
                     async sleep(ms){
-                        alert('sleep');
+                        //alert('sleep');
                         return new Promise((resolve) => {
                             setTimeout(resolve, ms);
                         });
                     },
                     async download_one(f) {
                         
-                        alert("download " + f.name + " start");
+                        //alert("download " + f.name + " start");
+                        f.status = 'loading...'
 
                         var tmp_status = "";
                         if(f.checked==false)
@@ -69,7 +70,7 @@
 
                         }
                         f.status = tmp_status;
-                        alert("download " + f.name + " over");
+                        //alert("download " + f.name + " over");
                     },
                     async lockBtn()
                     {
