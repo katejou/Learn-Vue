@@ -1,9 +1,9 @@
 <script>
-import ChildComp from '../components/ChildComp4.vue'
+import ChildComp4 from '../components/ChildComp4.vue'
 
 export default {
   components: {
-    ChildComp
+    ChildComp4
   },
   data() {
     return {
@@ -15,6 +15,6 @@ export default {
 
 <template>
  <!-- 不是以props傳值，而是用slot來接 -->
-  <ChildComp>To children : {{ msg }}</ChildComp>
+  <ChildComp4>To children : {{ msg }}</ChildComp4>
   <!-- 用兒子的slot，接得到父的msg -->
 </template>
