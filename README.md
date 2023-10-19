@@ -1,8 +1,10 @@
 # LearnVue
 
-這個是我照着Vue.js官網的教學資源來做的學和練習。
+I implemented the lessons on the official website to learn Vue step by step. 
 
-偶然會自己找更多資料來理解和補充。
+I have even found more information to deepen my understanding. 
 
-都是官網給的例子，我複製下來跑，邊看邊寫註解。
+But basically, they are all examples given on the official website.  
+
+I copied them and ran them, writing notes along with them.
 
